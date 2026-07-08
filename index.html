@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OutHistory V4 Responsive Router</title>
+<script>
+(function(){
+  var mobile = window.matchMedia('(max-width: 820px)').matches;
+  if(mobile){
+    window.location.replace('index_mobile.html');
+  } else {
+    window.location.replace('index_desktop.html');
+  }
+})();
+</script>
+<style>body{font-family:Arial,sans-serif;padding:40px;text-align:center}</style>
+</head>
+<body>
+<p>Loading exhibit…</p>
+<p>If you are not redirected automatically, open <a href="index_desktop.html">Desktop Version</a> or <a href="index_mobile.html">Mobile Version</a>.</p>
+</body>
+</html>
